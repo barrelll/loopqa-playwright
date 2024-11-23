@@ -27,7 +27,7 @@ npx playwright test
 
      Solution: Saving the authentication state for all test runs. Currently this solution is using a single account for each test run as we don't modify any data, only verify the end UI. If that changes we could try using multiple saved auth states for each worker request. Ideally we'd log in using an API.
 
-2. Finding unique and stable locators on this site while also minimalizing code duplication was a challenge for a couple reasons. The first being that almost everything was customizable in the since it could share a name, be it a field or task. There were also very little unique identifiers or tagnames (After doing some digging I did find that tags have a unique ID to leverage //div[@data-task-id="some number"]). 
+2. Finding unique and stable locators on this site while also minimalizing as much code duplication as possible was a challenge for a couple reasons. The first being that almost everything was customizable in the since it could share a name, be it a field or task. There were also very little unique identifiers or tagnames (After doing some digging I did find that tags have a unique ID to leverage //div[@data-task-id="some number"]). 
 
      Solution: My solution here was using relative locators and text for items I don't believe have a high likelyhood of changing for example 'Fields'.
 
