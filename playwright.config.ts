@@ -42,29 +42,29 @@ export default defineConfig({
         ...devices['Desktop Chrome'],
         storageState: 'playwright/.auth/user.json',
         // viewport: { width: 1920, height: 1080 },
-        headless: false,
+        // headless: false,
       },
     },
 
-    // {
-    //   name: 'firefox',
-    //   use: {
-    //     ...devices['Desktop Chrome'],
-    //     storageState: 'playwright/.auth/user.json',
-    //     // viewport: { width: 1920, height: 1080 },
-    //     // headless: false,
-    //   },
-    // },
+    {
+      name: 'firefox',
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: 'playwright/.auth/user.json',
+        // viewport: { width: 1920, height: 1080 },
+        // headless: false,
+      },
+    },
 
-    // {
-    //   name: 'webkit',
-    //   use: {
-    //     ...devices['Desktop Chrome'],
-    //     storageState: 'playwright/.auth/user.json',
-    //     // viewport: { width: 1920, height: 1080 },
-    //     // headless: false,
-    //   },
-    // },
+    {
+      name: 'webkit',
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: 'playwright/.auth/user.json',
+        // viewport: { width: 1920, height: 1080 },
+        // headless: false,
+      },
+    },
 
     /* Test against mobile viewports. */
     // {

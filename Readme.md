@@ -4,6 +4,6 @@ A Playwright-driven test suite that leverages data-driven techniques to minimize
 
 ## How To Use
 
-## Challenges and Solutions
+# Challenges and Solutions
 
-## Recommendations for improvements
+# Recommendations for improvements
