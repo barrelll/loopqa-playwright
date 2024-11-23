@@ -1,0 +1,10 @@
+{
+    "test_case": "testing asana 3",
+    "plan_page": "https://app.asana.com/0/1205367008165973/1205366758273574",
+    "task_name": "Share timeline with teammates",
+    "column_name": "To do",
+    "fields": [
+        {"name": "Priority", "value": "High"},
+        {"name": "Status", "value": "Off track"}
+    ]
+}

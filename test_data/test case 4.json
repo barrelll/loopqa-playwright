@@ -1,0 +1,12 @@
+{
+    "test_case": "testing asana 4",
+    "plan_page": "https://app.asana.com/0/1205367008167110/1205367578167113",
+    "task_name": "[Example] Laptop setup for new hire",
+    "column_name": "New Requests",
+    "fields": [
+        {"name": "Priority level?", "value": "Medium priority"},
+        {"name": "Effort level?", "value": "Low effort"},
+        {"name": "Type (Work Requests - IT)", "value": "New hardware"},
+        {"name": "Task Progress", "value": "Not Started"}
+    ]
+}
