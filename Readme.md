@@ -31,6 +31,10 @@ npx playwright test
 
      Solution: My solution here was using relative locators and text for items I don't believe have a high likelyhood of changing for example 'Fields'.
 
+3. Navigation to Specific Projects/Sections, If project names ("Cross-functional project plan, Project" or "Work Requests") change, tests will fail unless a consistent identifier (e.g., a project ID) is used. 
+        
+     Solution: Directly navigating to project pages.
+
 # Recommendations for improvements
 The current solution uses json files as input, this could potentially be sped up by using a MongoDB to feed the TC blobs. The DB could include an interface for creating test scenario's as well.
 
