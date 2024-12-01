@@ -14,11 +14,7 @@ setup('authenticate', async ({ page }, testInfo) => {
     await page.getByRole('button', { name: 'Continue', exact: true }).click();
     await page.getByRole("textbox", { name: 'p' }).fill(password);
     await page.getByRole('button', { name: 'Log in', exact: true }).click();
-    try {
-        await page.waitForURL(home_page);
-    } catch (err) {
-        if (err instanceof Error) throw err;
-    }
+    await page.waitForURL(home_page, { waitUntil: 'load' });
 
     await page.context().storageState({ path: authFile });
 });
